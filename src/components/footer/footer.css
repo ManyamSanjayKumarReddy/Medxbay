@@ -1,0 +1,204 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #DBE8FF;
+  font-family: 'matter', sans-serif;
+  border-radius: 8px;
+}
+
+.footer-containers {
+  background-color: #F4F7FC;
+  display: flex;
+  justify-content: center;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the left */
+  margin-right: 20px; /* Space between the two sections */
+}
+
+.right-section {
+  margin-top: -50px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the right */
+}
+
+.launch-notification {
+  font-family: 'matter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.investment-inquiries {
+  margin-top: -15px;
+  font-size: 14px;
+  font-family: 400;
+}
+
+.cta-button {
+  margin-top: 0px;
+  font-family: 'Matter', sans-serif;
+  font-size: 16px;
+  background-color: #0167FF;
+  color: #ffffff;
+  padding: 8px 45px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  outline: none;
+  /* box-shadow: 0 0 0 3px rgba(1, 103, 255, 0.5); */
+}
+
+.cta-button:hover {
+  background-color: #014bb7;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.cta-button:focus {
+  box-shadow: 0 0 0 3px rgba(1, 103, 255, 0.5);
+}
+
+/* Timer Styles */
+.timer-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.timer-box .CircularProgressbar path {
+  stroke-width: 1.5px !important; /* Force the stroke width */
+}
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  background-color: transparent;
+  color: #0167FF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.timer-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: black; /* Color for running time */
+}
+
+.timer-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #FF0000; /* Color for remaining time */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    align-items: center;
+    margin: 0;
+  }
+
+  .timer-container {
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timer-box {
+    width: 88px; /* Reduce width by 12% */
+    height: 88px; /* Reduce height by 12% */
+    padding: 5.3px; /* Adjust padding by 12% */
+  }
+
+  .timer-number {
+    font-size: 21.12px; /* Reduce font size by 12% */
+  }
+
+  .timer-label {
+    font-size: 10.56px; /* Reduce font size by 12% */
+  }
+
+  .launch-notification {
+    font-size: 21.6px; /* Increase font size by 20% */
+  }
+
+  .investment-inquiries {
+    font-size: 16.8px; /* Increase font size by 20% */
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 19.2px; /* Increase font size by 20% */
+    padding: 9.6px 54px; /* Increase padding by 20% */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 421px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    text-align: center;
+  }
+
+  .left-section, .right-section {
+    align-items: center;
+    margin: 0;
+    width: 300px;
+  }
+
+  .timer-container {
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timer-box {
+    width: 88px; /* Reduce width by 12% */
+    height: 88px; /* Reduce height by 12% */
+    padding: 5.3px; /* Adjust padding by 12% */
+  }
+
+  .timer-number {
+    font-size: 21.12px; /* Reduce font size by 12% */
+  }
+
+  .timer-label {
+    font-size: 10.56px; /* Reduce font size by 12% */
+  }
+
+  .launch-notification {
+    font-size: 21.6px; /* Increase font size by 20% */
+  }
+
+  .investment-inquiries {
+    font-size: 16.8px; /* Increase font size by 20% */
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 19.2px; /* Increase font size by 20% */
+    padding: 9.6px 54px; 
+    margin-top: 10px;
+  }
+}

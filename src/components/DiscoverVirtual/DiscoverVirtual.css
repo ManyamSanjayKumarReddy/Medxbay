@@ -1,0 +1,205 @@
+.discover-virtual {
+  width: 100%;
+  height: 900px;
+  padding: 20px;
+  position: relative;
+  top: 350px;
+}
+
+.discover-virtual .discove-heading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #272848;
+}
+
+.discover-virtual .discove-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.discover-virtual .discove-heading p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.progress-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  color: #52536D;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.progress-item.current {
+  background-color: #fff;
+  color: #52536D;
+  border: 1px solid #4a90e2;
+}
+
+.progress-line {
+  height: 4px;
+  width: 320px;
+  background-color: #F0F0F5;
+}
+
+.step-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start for better vertical alignment */
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.content {
+  text-align: center;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px; /* Ensure content doesn't exceed a certain width */
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 16.75px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.image-container.current {
+  background-color: #fff;
+  color: #52536D;
+  border: 1px solid #4a90e2;
+}
+.step-container .content .step-icon {
+  width: 66px;
+  height: 66px;
+}
+
+.step-container .content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  margin: 10px 0;
+}
+
+.step-container .content .jsut-align {
+  padding-top: 34px;
+}
+
+.step-container .content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  width: 75%;
+}
+
+/* laptop view adjustments */
+@media (max-width: 1024px) {
+  .discover-virtual .discove-heading h1 {
+    font-size: 28px;
+  }
+
+  .discover-virtual .discove-heading p {
+    font-size: 16px;
+  }
+
+  .progress-container {
+    flex-direction: row; /* Ensure progress items are in a row */
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+  }
+
+  .progress-line {
+    width: 270px; /* Adjust width back to original */
+    height: 4px; /* Keep height consistent */
+  }
+
+  .step-container {
+    flex-direction: row; /* Ensure steps are in a row */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: center;
+    margin: 40px auto;
+  }
+
+  .content {
+    text-align: center;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px; /* Ensure content doesn't exceed a certain width */
+  }
+
+  .step-container .content h3 {
+    font-size: 20px;
+  }
+  .step-container .content .jsut-align {
+    padding-top: 0px;
+  }
+  .step-container .content p {
+    font-size: 10px;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+   .discover-virtual{
+    height: 90vh;
+    top: 170px;
+    height: auto;
+  }
+
+  .discover-virtual .discove-heading h1 {
+    font-size: 28px;
+
+  }
+
+  .discover-virtual .discove-heading p {
+    font-size: 16px;
+  }
+
+  .progress-container {
+    flex-direction: column;
+  }
+
+  .progress-line {
+    width: 4px;
+    height: 50px;
+  }
+
+  .step-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  .content {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .step-container .content h3 {
+    font-size: 24px;
+  }
+
+  .step-container .content p {
+    font-size: 14px;
+  }
+}
